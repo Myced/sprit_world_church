@@ -10,10 +10,10 @@
      <div class="overlay-bg"></div>
      <div class="container">
        <div class="banner-block">
-         <h3 class="section-heading">Gallery Three Column</h3>
+         <h3 class="section-heading">Gallery</h3>
          <ol class="breadcrumb">
-           <li><a href="index.html">Home</a></li>
-           <li class="active"><a>Gallery-3-Col</a></li>
+           <li><a href="/">Home</a></li>
+           <li class="active"><a>Gallery</a></li>
          </ol>
        </div>
      </div>
@@ -24,7 +24,11 @@
     <div class="container-fluid">
       <div class="section text-center">
         <h3 class="section-heading">Our Gallery</h3>
-        <h5 class="sub-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at  euismod ex, Maeceans sit amet sollicitudin ex.</h5>
+        <h5 class="sub-heading lobster">
+            Here is a collection of some of our images.
+            <br>
+            Go through them and enjoy. <strong>Happy Viewing!!!!</strong>
+        </h5>
       </div>
     </div>
     <div class="portfolio-content">
@@ -105,11 +109,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12 load-more text-center">
-            <span class="load-more-btn"><a href="#" class="btn btn-default">View More</a></span>
-          </div>
-        </div>
+        
       </div>
     </div>
   </section>

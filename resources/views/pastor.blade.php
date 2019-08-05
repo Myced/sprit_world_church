@@ -6,34 +6,44 @@ Our Pastor
 
 @section('content')
 <header id="page-banner" class="banner-main-block">
-    <div class="banner-img" style="background-image: url('images/top-banner.jpg')">
+    <div class="banner-img" style="background-image: url('/img/banner_2.jpg')">
       <div class="overlay-bg"></div>
       <div class="container">
         <div class="banner-block">
-          <h3 class="section-heading">Our Pastor</h3>
-          <ol class="breadcrumb">
-            <li><a href="/">Home</a></li>
-            <li class="active"><a>Pastor Details</a></li>
-          </ol>
+          <h3 class="section-heading">Pastor A B COLLINS</h3>
         </div>
       </div>
     </div>
 </header>
+
+@if(session('success') != null)
+<section class="contact-main-block contact-two">
+    <div class="container">
+        <div class="alert alert-success">
+            <strong>Success</strong>
+            {{ session('success') }}
+        </div>
+    </div>
+</section>
+@endif
 
 <section id="pastor-dtl-page" class="pastor-dtl-block">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div class="pastor-img">
-            <img src="images/pastor/pastor-dtl-01.jpg" class="img-responsive" alt="pastor-img-1">
+            <img src="/img/pastor.jpg" class="img-responsive" alt="pastor Picture">
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div class="row">
             <div class="col-lg-offset-1 col-lg-11 col-md-offset-1 col-md-11 col-sm-12 col-xs-12">
               <div class="pastor-content">
-                <h3 class="pastor-id">Vinton Fenson</h3>
-                <p class="pastor-post">Senior Pastor</p>
+                <h3 class="pastor-id">A B COLLINS</h3>
+                <p class="pastor-post">
+                    Senior Pastor
+                    <strong class="text-styled">(SPIRIT WORSHIP EMBASSY)</strong>
+                </p>
                 <hr>
                 <div class="social-icon social-two">
                   <ul>
@@ -43,20 +53,65 @@ Our Pastor
                     <li><a href="https://www.youtube.com/" target="_blank" class="youtube"><i class="fa fa-youtube-play"></i></a></li>
                   </ul>
                 </div>
-                <p class="pastor-desc">Vivamus elementum, purus sit amet lobortis ornare, justo velit sollicitudin justo, sed faucibus neque sem eget metus. Sed pretium ullamcorper nunc eu dictum. Maecenas id porta enim. Praesent lobortis urna felis, sed tempor tellus gravida sit amet. Aliquam mauris risus rhoncus isn eros ut.</p>
-                <div class="pastor-body">
-                  <div class="row">
-                    <div class="col-xs-3"><p>Pastor Address:</p></div>
-                    <div class="col-xs-9"><p>Church Themes<br>Block 145 Antela Road<br>Bredsbin Austrlia </p></div>
-                    <div class="col-xs-3"><p>Phone:</p></div>
-                    <div class="col-xs-9"><p class="contact-no"><a href="tel:012123456789">012 123 456 789</a><br><a href="tel:012123456789">012 123 456 789</a></p></div>
-                    <div class="col-xs-3"><p>Email:</p></div>
+                <p class="pastor-desc old-standard">
+                    <strong>A-b Collins</strong> is the founder of spirit worship embassy ministries.
+                    It is a prophetic word addicted ministry, also call
+                    <strong class="text-styled">Covenant City of Wonders</strong>.
+                    He is a man that carries a mandate to command change and
+                    bring back dignity in the body of Christ, he is also a good writer
+                    of books. A-b Collins is a man that has the pleasure to help
+                    the hopeless, he is a man that carries an atmosphere of
+                    happiness and joy. A-b Collins believes in reaching out
+                    to the lost at all cost, he is a man that loves teaching
+                    and preaching the <strong>Gospel of JESUS CHRIST</strong>.
+                    <strong>Spirit worship Embassy</strong> is a ministry that
+                    was given birth on the 10<sup>th</sup> of
+                    June 2015, through God’s own servant
+                    <strong>BRO.A-B COLLINS.</strong>
+                    After a long fast God spoke to him and said
+                    <span class="text-styled">"Go to the world and wipe out tears and restore happiness"</span>.
+                    These were HIS exact words to His servant.
+                </p>
+
+                <!-- <div class="pastor-body">
+                  <div class="row ubuntu">
+                    <div class="col-xs-3">
+                        <p class="ubuntu">Pastor Address:</p>
+                    </div>
                     <div class="col-xs-9">
-                      <p class="mail-to"><a href="mailto:wporganic@example.com?Subject=Hello%20again" target="_top">wporganic@example.com</a><br>
-                      <a href="mailto:wporganic@example.com?Subject=Hello%20again" target="_top">wporganic@example.com</a></p>
+                        <p>
+                            Church Themes
+                            <br>
+                            Block 145 Antela Road<br>Bredsbin Austrlia
+                        </p>
+                    </div>
+                    <div class="col-xs-3">
+                        <p>Phone:</p>
+                    </div>
+                    <div class="col-xs-9">
+                        <p class="contact-no">
+                            <a href="tel:012123456789">012 123 456 789</a>
+                            <br>
+                            <a href="tel:012123456789">012 123 456 789</a>
+                        </p>
+                    </div>
+                    <div class="col-xs-3">
+                        <p>Email:</p>
+                    </div>
+                    <div class="col-xs-9">
+                      <p class="mail-to">
+                          <a href="mailto:wporganic@example.com?Subject=Hello%20again"
+                            target="_top">wporganic@example.com</a>
+                            <br>
+                            <a href="mailto:wporganic@example.com?Subject=Hello%20again"
+                            target="_top">wporganic@example.com</a>
+                        </p>
                     </div>
                   </div>
-                </div>
+                </div> -->
+                <!-- end of pastor contact information -->
+
+
               </div>
             </div>
           </div>
@@ -68,11 +123,27 @@ Our Pastor
 <!--  pastor quote -->
   <section id="pastor-quote" class="pastor-quote-main-block">
     <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <h3 class="pastor-id">His Mission</h3>
+                </div>
+            </div>
+        </div>
+
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div class="pastor-quote-block">
             <span class="quotes-icon"><i class="fa fa-quote-left"></i></span>
-            <p>Vivamus elementum, purus sit amet lobortis ornare, justo velit sollicitudin justo, sed faucibus neque sem eget metus. Sed pretium ullamcorperSed volutpat ante vel erat pharetra, eu vulputate sapien faucibus. Praesent consequat justo dolor, in vulputate eros mollis ultrices. Aenean dictum placerat nulla vel facilisis. Aenean ipsum turpis, tristique vel fermentum eu, gravida vel ante. Nullam vestibulum vehicula quam id sodales. Donec orci nulla, viverra eget massa a, auctor malesuada metus.</p>
+            <p class="lobster f-24 text-styled">
+                Revealing salvation across the globe to six hundred millions souls.
+                <br>
+                <strong>Titus, 2:11</strong> <br>
+                <strong>Matthew 28:19:29</strong> <br>
+                <strong>Deuteronomy 15:5:7</strong> <br>
+                to all the nations
+               </p>
              <span class="quotes-icon"><i class="fa fa-quote-right"></i></span>
           </div>
         </div>
@@ -80,105 +151,18 @@ Our Pastor
     </div>
   </section>
 <!--  end pastor quote -->
-<!--  pastor dtl two -->
-  <section class="pastor-dtl-two">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-          <div class="pastor-content">
-            <div class="pastor-dtl">
-              <h4 class="pastor-dtl-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac nulla quam. </h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla mi, vestibulum in lectus vitae, placerat maximus sapien. Duis at iaculis massa. Donec posuere ac dui vitae luctus.</p>
-              <p>Curabitur mi est, rhoncus non nulla et, eleifend pulvinar mi. Phasellus condimentum nec eros eget ultricies. Duis a purus ut justo interdum porta sit amet id metus. Ut scelerisque sodales erat quis commodo.</p>
-            </div>
-            <div class="pastor-dtl-img">
-              <div class='row'>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                  <div class="pastor-img">
-                    <img src="images/pastor/pastor-dtl-02.jpg" class="img-responsive" alt="pastor-img-2">
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                  <div class="pastor-img">
-                    <img src="images/pastor/pastor-dtl-03.jpg" class="img-responsive" alt="pastor-img-3">
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                  <div class="pastor-img">
-                    <img src="images/pastor/pastor-dtl-04.jpg" class="img-responsive" alt="pastor-img-4">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-          <div class="pastor-faq">
-            <div class="panel-group" id="pastoraccordion" role="tablist" aria-multiselectable="true">
-              <div class="panel panel-default faq-block">
-                <div class="panel-heading" role="tab" id="pastorheadingOne">
-                  <div class="panel-title faq-heading">
-                    <a role="button" data-toggle="collapse" data-parent="#pastoraccordion" href="#pastorcollapseOne"  aria-expanded="true" aria-controls="collapseOne">
-                      <h4 class="faq-heading">Title Text 01</h4>
-                      <span class="btn btn-default faq-btn faq-btn faq-btn-minus pull-right"><i class="fa fa-minus"></i></span>
-                      <span class="btn btn-default faq-btn faq-btn-plus pull-right"><i class="fa fa-plus"></i></span>
-                    </a>
-                  </div>
-                </div>
-                <div id="pastorcollapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="pastorheadingOne">
-                <div class="panel-body faq-dtl">
-                  <p>Architecto nam, fugiat cumque dolor, quibusdam veritatis id, expedita accusantium molestiae nostrum est.</p>
-                  <p>Atque illum, ducimus, beatae dolor accusantium aliquam distinctio culpa tenetur neque amet. Molestias voluptatem odit, vitae,</p>
-                </div>
-              </div>
-            </div>
-              <div class="panel panel-default faq-block">
-                <div class="panel-heading" role="tab" id="pastorheadingTwo">
-                  <div class="panel-title faq-heading">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#pastoraccordion" href="#pastorcollapseTwo" aria-expanded="false" aria-controls="pastorcollapseTwo">
-                     <h4 class="faq-heading">Title Text 02</h4>
-                      <span class="btn btn-default faq-btn faq-btn faq-btn-minus pull-right"><i class="fa fa-minus"></i></span>
-                      <span class="btn btn-default faq-btn faq-btn-plus pull-right"><i class="fa fa-plus"></i></span>
-                    </a>
-                  </div>
-                </div>
-                <div id="pastorcollapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="pastorheadingTwo">
-                  <div class="panel-body faq-dtl">
-                    <p>Ut viverra diam nisi, quis fermentum neque imperdiet ut. Praesent sed lacus dapibus, elementum neque et.</p>
-                    <p> consequat nibh. Aliquam erat volutpat. Sed turpis eros, pharetra in diam eu, ultricies tempus velit. Proin quis neque lorem.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default faq-block">
-                <div class="panel-heading" role="tab" id="pastorheadingThree">
-                  <div class="panel-title faq-heading">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#pastoraccordion" href="#pastorcollapseThree" aria-expanded="false" aria-controls="pastorcollapseThree">
-                     <h4 class="faq-heading">Title Text 03</h4>
-                      <span class="btn btn-default faq-btn faq-btn faq-btn-minus pull-right"><i class="fa fa-minus"></i></span>
-                      <span class="btn btn-default faq-btn faq-btn-plus pull-right"><i class="fa fa-plus"></i></span>
-                    </a>
-                  </div>
-                </div>
-                <div id="pastorcollapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="pastorheadingThree">
-                  <div class="panel-body faq-dtl">
-                    <p>Ut viverra diam nisi, quis fermentum neque imperdiet ut. Praesent sed lacus dapibus, elementum neque et.</p>
-                    <p> consequat nibh. Aliquam erat volutpat. Sed turpis eros, pharetra in diam eu, ultricies tempus velit. Proin quis neque lorem.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-<!--  end pastor detail two -->
+
 <!--  contact form  -->
   <section id="contact-form" class="form-main-block form-two pastor-form">
-    <div class="parallax" style="background-image: url('images/pastor/pastor-dtl-bg1.jpg')">
+    <div class="parallax" style="background-image: url('/img/banner_2.jpg')">
       <div class="overlay-bg"></div>
       <div class="form-section">
-        <h4 class="form-heading">This department provides medical care to patients who have problems with their heart or circulation. </h4>
+        <h4 class="form-heading">
+            If you need to contact Pastor <strong class="lobster">A. B. Collins</strong>
+            You can use the information below.
+            <br>
+            Or leave a message
+        </h4>
         <div class="pastor-form-block">
           <div class="pastor-contact">
             <span><i class="fa fa-phone"></i></span>
@@ -186,28 +170,29 @@ Our Pastor
           </div>
           <div class="pastor-mail">
             <span><i class="fa fa-envelope"></i></span>
-            <p><a href="mailto:wporganic@example.com?Subject=Hello%20again" target="_top">wporganic@example.com</a></p>
+            <p><a href="mailto:abcollins@yahoo.com" target="_top">abcollins@yahoo.com</a></p>
           </div>
         </div>
-        <p class="form-subheading">Donec suscipit rutrum diam, vel posuere nibh tempor nec. Fusce mi magna, blandit id volutpat at, malesuada eu ex. Suspendisse porttitor porttitor dui a congue. In hac habitasse platea dictumst. Sed nec nulla eget nulla semper scelerisque.</p>
       </div>
       <div class="container">
+          <br>
         <div class="row">
          <div class="contact-form-block">
-            <form class="contact-form" method="post" action="https://wporganic.com/html/church/version1/contact-us.php">
+            <form class="contact-form" method="post" action="{{ route('about.pastor.store') }}">
+                @csrf
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 <div class="form-group">
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Name And Surname" required>
+                  <input type="text" class="form-control" name="name" placeholder="Name And Surname" required>
                 </div>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 <div class="form-group">
-                  <input type="text" class="form-control" id="number" name="number" placeholder="Contact Phone Number" required>
+                  <input type="text" class="form-control" name="tel" placeholder="Contact Phone Number" required>
                 </div>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 <div class="form-group">
-                  <input type="text" class="form-control" id="email" name="email" placeholder="Email Address" required>
+                  <input type="text" class="form-control" name="email" placeholder="Email Address (Optional)">
                 </div>
               </div>
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -216,12 +201,15 @@ Our Pastor
                 </div>
               </div>
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <span class="pastor-btn"><a href="#" class="btn btn-default">Send</a></span>
+                <button type="submit" name="button" class="btn btn-info">
+                    Send Message
+                </button>
               </div>
             </form>
           </div>
         </div>
+        <br><br>
       </div>
     </div>
-  </section> 
+  </section>
 @endsection

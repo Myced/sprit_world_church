@@ -1,0 +1,237 @@
+@font-face {
+    font-family: "lobster";
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: "NotoSans";
+    src: url(../fonts/NotoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url(../fonts/Ubuntu-bold.ttf);
+}
+
+@font-face {
+    font-family: "Old Standard";
+    src: url(../fonts/OldStandard.ttf);
+}
+
+@font-face {
+    font-family: "AbrilFatface";
+    src: url(../fonts/AbrilFatface.ttf);
+}
+
+.lobster
+{
+    font-family: "lobster";
+}
+
+.noto-sans
+{
+    font-family: "NotoSans";
+}
+
+.ubuntu
+{
+    font-family: 'Ubuntu';
+}
+
+.abril
+{
+    font-family: "AbrilFatface";
+}
+
+.old-standard
+{
+    font-family: "Old Standard";
+}
+
+.top-nav-collapse
+{
+    background: #fff;
+}
+
+.top-nav-collapse #cssmenu > ul > li > a
+{
+    font-family: "NotoSans";
+    color: #0dc5ed;
+    font-weight: bold;
+    transition: 1s all;
+}
+
+.top-nav-collapse #cssmenu > ul > li > a:hover
+{
+    color: #fff;
+    background: #0dc5ed;
+}
+
+#cssmenu ul ul li:hover > a, #cssmenu ul ul li a:hover
+{
+    color: #fff;
+    background: #0dc5ed;
+}
+
+#cssmenu ul ul li a
+{
+    background: #fff;
+    color: #0dc5ed;
+}
+
+#cssmenu ul ul
+{
+    border-bottom: none;
+}
+
+.portfolio-overlay
+{
+    background: rgba(7, 209, 230, 0.7);
+}
+
+.banner-main-block .breadcrumb>.active a
+{
+    color: #0dc5ed;
+}
+
+.banner-main-block .breadcrumb li a:hover
+{
+    color: #149cba;
+}
+
+.contact-two .contact-block
+{
+    background: #0dc5ed;
+}
+
+.contact-two .block-two
+{
+    background: #13b7db;
+}
+
+.contact-two .block-three
+{
+    background: #17a7c7;
+}
+
+.contact-two {
+    margin: 15px auto 15px;
+}
+
+.banner-main-block .overlay-bg {
+    background: rgba(0,0,0,0.4);
+}
+
+.form-main-block .section
+{
+    padding: 40px 10px;
+}
+
+.contact-form .form-control:active,
+.contact-form .form-control:focus,
+.contact-form .form-textarea:active,
+.contact-form .form-textarea:focus
+{
+    border-color: #0dc5ed;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(11, 211, 238, 0.83);
+}
+
+.btn
+{
+    font-family: lobster;
+    font-size: 20px;
+    padding: 10px 40px;
+    transition: 1s all;
+}
+
+.btn-rounded
+{
+    border-radius: 40px;
+}
+
+.btn-info
+{
+    border: 2px solid #0dc5ed;
+    color: #0dc5ed;
+    background: #fff;
+}
+
+.btn-primary
+{
+    border: 2px solid #2e6da4;
+    color: #2e6da4;
+    background: #fff;
+}
+
+.btn-danger
+{
+    border: 2px solid #d43f3a;
+    color: #d43f3a;
+    background: #fff;
+}
+
+.btn-warning
+{
+    border: 2px solid #eea236;
+    color: #eea236;
+    background: #fff;
+}
+
+.btn-success
+{
+    border: 2px solid #5cb85c;
+    color: #5cb85c;
+    background: #fff;
+}
+
+
+#cssmenu > ul > li:hover > a {
+    color: #0dc5ed;
+    border-top: 2px solid #0dc5ed;
+}
+
+.text-styled
+{
+    color: #0dc5ed;
+}
+
+.pastor-desc
+{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.f-20
+{
+    font-size: 20px;
+}
+
+.f-24
+{
+    font-size: 24px;
+}
+
+.three-d
+{
+    color: #000000;
+    background-color: #ffffff;
+    text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+}
+
+.text-justified
+{
+    text-align: justify;
+}
+
+.D3Text {
+font-family:Garamond, serif;
+line-height:1em;
+color:#fff9d6;
+font-weight:bold;
+font-size:134px;
+text-shadow:0px 0px 0 rgb(231,231,231),1px 1px 0 rgb(216,216,216),
+            2px 2px 0 rgb(202,202,202),3px 3px 0 rgb(187,187,187),
+            4px 4px 0 rgb(173,173,173),5px 5px 0 rgb(158,158,158),
+            6px 6px 0 rgb(144,144,144),7px 7px 6px rgba(0,0,0,0.6),
+            7px 7px 1px rgba(0,0,0,0.5),0px 0px 6px rgba(0,0,0,.2);
+}

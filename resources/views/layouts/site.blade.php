@@ -21,6 +21,7 @@
 
         <!-- custom css -->
         <link href="/css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="/css/app.css" rel="stylesheet" type="text/css"/>
         <!-- end theme style -->
     </head>
 <!-- end head -->

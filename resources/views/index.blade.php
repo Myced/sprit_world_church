@@ -5,50 +5,303 @@
 @endsection
 
 @section('styles')
-    
+<!-- REVOLUTION SLIDER -->
+    <link href="/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+    <link href="/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+
     <!-- datepicker css -->
     <link href="/css/datepicker.css" rel="stylesheet" type="text/css"/>
 @endsection
 
 @section('content')
-<header id="home-slider" class="slider-main-block">
-  <div class="item home-slider-img" style="background-image: url('images/slider-01.jpg')">
-    <div class="overlay-bg"></div>
-    <div class="container">
-      <div class="slider-dtl">
-        <h1 class="slider-heading">Aenean varius mi purus vehicula<br>upcoming events</h1>
-        <h5 class="slider-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at euismod ex. Maecenas sit amet sollicitudin ex.</h5>
-        <div class="slider-countdown">
-          <div class="coming-countdown" data-countdown="2017/4/30"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="item home-slider-img" style="background-image: url('images/slider-02.jpg')">
-    <div class="overlay-bg"></div>
-    <div class="container">
-      <div class="slider-dtl">
-        <h1 class="slider-heading">Lorem ipsum dolor sit amet<br>upcoming events</h1>
-        <h5 class="slider-subheading">Cursus lorem, ac iaculis metus sem vitae purus. Vivamus suscipit velit nec maximus interdum. Maecenas sit. </h5>
-        <div class="slider-countdown">
-          <div class="coming-countdown" data-countdown="2017/4/30"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="item home-slider-img" style="background-image: url('images/slider-03.jpg')">
-    <div class="overlay-bg"></div>
-    <div class="container">
-      <div class="slider-dtl">
-        <h1 class="slider-heading">Maecenas sit sollicitudin <br>upcoming events</h1>
-        <h5 class="slider-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at euismod ex. Maecenas sit amet sollicitudin ex.</h5>
-        <div class="slider-countdown">
-          <div class="coming-countdown" data-countdown="2017/4/30"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+
+<!-- REVOLUTION SLIDER -->
+			<section id="slider" class="slider fullwidthbanner-container roundedcorners">
+				<!--
+					Navigation Styles:
+
+						data-navigationStyle="" theme default navigation
+
+						data-navigationStyle="preview1"
+						data-navigationStyle="preview2"
+						data-navigationStyle="preview3"
+						data-navigationStyle="preview4"
+
+					Bottom Shadows
+						data-shadow="1"
+						data-shadow="2"
+						data-shadow="3"
+
+					Slider Height (do not use on fullscreen mode)
+						data-height="300"
+						data-height="350"
+						data-height="400"
+						data-height="450"
+						data-height="500"
+						data-height="550"
+						data-height="600"
+						data-height="650"
+						data-height="700"
+						data-height="750"
+						data-height="800"
+				-->
+				<div class="fullscreenbanner" data-navigationStyle="">
+					<ul class="hide">
+
+						<!-- SLIDE  -->
+						<li data-transition="random" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
+
+							<img src="/img/home/slide_1.jpg"
+                                data-lazyload="/img/home/slide_1.jpg" alt=""
+                                data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat" />
+
+							<div class="tp-dottedoverlay twoxtwo"><!-- dotted overlay --></div>
+							<div class="overlay dark-3"><!-- dark overlay [1 to 9 opacity] --></div>
+
+							<div class="tp-caption customin ltl tp-resizeme text_white"
+								data-x="center"
+								data-y="180"
+								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+								data-speed="800"
+								data-start="1000"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="z-index: 10;">
+								<span class="fw-300">DEVELOPMENT / MARKETING / DESIGN / PHOTO</span>
+							</div>
+
+							<div class="tp-caption customin ltl tp-resizeme large_bold_white text-center"
+								data-x="center"
+								data-y="230"
+								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+								data-speed="800"
+								data-start="1200"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="z-index: 10;">
+								WELCOME TO
+                                <br>
+                                SPIRIT WORSHIP EMBASSY
+							</div>
+
+							<div class="tp-caption customin ltl tp-resizeme small_light_white f-24"
+								data-x="center"
+								data-y="350"
+								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+								data-speed="800"
+								data-start="1400"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="z-index: 10; width: 750px; max-width: 750px; white-space: normal; text-align:center;">
+                                The Place to be for all Your Problems
+							</div>
+
+							<div class="tp-caption customin ltl tp-resizeme"
+								data-x="center"
+								data-y="438"
+								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+								data-speed="800"
+								data-start="1550"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="z-index: 10;">
+								<a href="{{ route('services') }}" class="btn btn-rounded btn-info btn-lg">
+									Our Services
+								</a>
+							</div>
+
+						</li>
+
+						<!-- SLIDE  -->
+						<li data-transition="random" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
+
+							<img src="/img/home/slide_11.jpg"
+                                data-lazyload="/img/home/slide_11.jpg" alt="" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat" />
+
+							<div class="tp-caption mediumlarge_light_white lfb tp-resizeme"
+								data-x="left" data-hoffset="70"
+								data-y="90"
+								data-speed="1000"
+								data-start="1400"
+								data-easing="easeOutExpo"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.1"
+								data-endelementdelay="0.1"
+								data-endspeed="300">
+								<span class="fw-300 font-lato">Come and Experience</span>
+							</div>
+
+							<div class="tp-caption mediumlarge_light_white lft tp-resizeme"
+								data-x="left" data-hoffset="70"
+								data-y="150"
+								data-speed="1000"
+								data-start="1200"
+								data-easing="easeOutExpo"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.1"
+								data-endelementdelay="0.1"
+								data-endspeed="300">
+								<span class="fw-300 font-lato">+ Healing</span>
+							</div>
+
+                            <div class="tp-caption mediumlarge_light_white lfb tp-resizeme"
+								data-x="left" data-hoffset="70"
+								data-y="190"
+								data-speed="1000"
+								data-start="1400"
+								data-easing="easeOutExpo"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.1"
+								data-endelementdelay="0.1"
+								data-endspeed="300">
+								<span class="fw-300 font-lato">+ Deliverance</span>
+							</div>
+
+                            <div class="tp-caption mediumlarge_light_white lfb tp-resizeme"
+								data-x="left" data-hoffset="70"
+								data-y="240"
+								data-speed="1000"
+								data-start="1400"
+								data-easing="easeOutExpo"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.1"
+								data-endelementdelay="0.1"
+								data-endspeed="300">
+								<span class="fw-300 font-lato">+ Prophecies</span>
+							</div>
+
+                            <div class="tp-caption mediumlarge_light_white lfb tp-resizeme"
+								data-x="left" data-hoffset="70"
+								data-y="290"
+								data-speed="1000"
+								data-start="1400"
+								data-easing="easeOutExpo"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.1"
+								data-endelementdelay="0.1"
+								data-endspeed="300">
+								<span class="fw-300 font-lato">... And Much More</span>
+							</div>
+
+						</li>
+
+						<!-- SLIDE -->
+						<li data-transition="random" data-slotamount="1" data-masterspeed="1500"   data-title="Slide">
+							<img src="/img/home/slide_3.jpg"
+                                data-lazyload="/img/home/slide_3.jpg" alt="kenburns6"
+                                data-bgposition="left top" data-kenburns="on"
+                                data-duration="10000" data-ease="Linear.easeNone"
+                                data-bgfit="130" data-bgfitend="100"
+                                data-bgpositionend="right bottom">
+							<!-- LAYERS -->
+
+							<!-- LAYER NR. 2 -->
+							<div class="tp-caption customin ltl tp-resizeme"
+								data-x="200"
+								data-y="150"
+								data-customin="x:-200;y:0;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+								data-speed="800"
+								data-start="1500"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="z-index: 3; color: #212121; font-size:20px; font-weight:300; text-shadow:none;">
+
+							</div>
+
+							<div class="tp-caption customin ltl tp-resizeme"
+								data-x="200"
+								data-y="180"
+								data-customin="x:10;y:0;z:0;rotationY:120;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 50%;"
+								data-speed="600"
+								data-start="1700"
+								data-easing="easeOutCubic"
+								data-splitin="chars"
+								data-splitout="none"
+								data-elementdelay="0.1"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="z-index: 3; color: #666; line-height: 1.2; max-width: 450px; width: 450px; white-space: normal; font-size:60px; font-weight:bold;">
+								ODAINED BY GOD
+                                <br>
+                                TO THE PEOPLE OF CAMEROON
+							</div>
+
+						</li>
+
+						<!-- SLIDE  -->
+						<li data-transition="random" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
+
+							<img src="/img/home/slide_5.jpg"
+                                data-lazyload="/img/home/slide_5.jpg" alt="" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat" />
+
+							<div class="tp-caption very_large_text lfb ltt tp-resizeme"
+								data-x="right" data-hoffset="-100"
+								data-y="center" data-voffset="-100"
+								data-speed="600"
+								data-start="800"
+								data-easing="Power4.easeOut"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="500"
+								data-endeasing="Power4.easeIn">
+								RUN WILD
+							</div>
+
+							<div class="tp-caption medium_light_white lfb ltt tp-resizeme"
+								data-x="right" data-hoffset="-100"
+								data-y="center" data-voffset="10"
+								data-speed="600"
+								data-start="900"
+								data-easing="Power4.easeOut"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="500"
+								data-endeasing="Power4.easeIn">
+								Happiness is an accident of nature,<br/>
+								a beautiful and flawless aberration.<br/>
+								<span style="font-size:24px;font-weight:400;">&ndash; AB Collins</span>
+							</div>
+
+						</li>
+
+					</ul>
+					<div class="tp-bannertimer"></div>
+				</div>
+			</section>
+			<!-- /REVOLUTION SLIDER -->
+
+
+
+
 
 
 <!--  about  -->
@@ -811,6 +1064,10 @@
 @endsection
 
 @section('scripts')
+<!-- REVOLUTION SLIDER -->
+<script src="/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script src="/plugins/slider.revolution/js/demo.revolution_slider.js"></script>
 
 
 <!-- event countdown js -->
